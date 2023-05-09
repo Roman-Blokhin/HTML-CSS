@@ -19,5 +19,36 @@ div b, i {
     color: green;
 }
 
-/* */
+.main_links {
+    color: red;
+    text-decoration: overline;
+    font-size: 20px;
+    background: yellow;
+}
 
+/* 5. создаем псевдокласс, чтобы при наведении на ссылку, текст становился другим цветом, 
+а подчеркивание сверху менялось на обычное подчеркивание снизу */
+.main_links:hover {
+    color: black;
+    font-size: 35px;
+    text-decoration: underline ; /* 6. добавляем линию, подчеркнутый текст */
+    text-decoration-style: double; /* 7. выбираем стиль линии */
+    text-decoration-color: green; /* 8. выбираем цвет линии */
+    cursor: zoom-in; /* 9. стиль курсора тоже можно менять, в данном случае он становится лупой, меняя свой вид */;
+}
+
+.main_links:active { /* 10. псевдокласс, который ПРИ НАЖАТИИ перечеркивает текст  */
+    text-decoration: line-through;
+}
+
+.main_links:visited { /* 11. изменяет текст цвета у ссылок, по которым перешли */
+    color: grey;
+}
+
+input { /* 12. задали цвет текста для всех полей ввода, когда курсор не в поле */
+    color: blue;
+}
+
+input:focus { /* 13. псевдокласс, который меняет цвет текста в поле ввода, когда курсор в поле */
+    color: red;
+}

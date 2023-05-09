@@ -1,28 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML + CSS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HTML + CSS</title>
 
-    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <!-- 1. создаем класс и прописываем его название из файла css - class="main_style" -->
-    <p id="testid"> Lorem ipsum dolor sit amet, consectetur <i>adipisicing elit</i>. Deserunt ea earum eligendi, ex,
-        fugiat fugit, maxime <b class="main_style">nihil obcaecati</b> odio quas quis quod <b>recusandae reiciendis</b>
-        similique tempora temporibus velit vitae voluptate. </p>
-    <!-- 2. одно название id в одном html файле должно быть только один раз, другие названия можно использовать -->
+	<!-- 1. создаем класс и прописываем его название из файла css - class="main_style" -->
+	<!-- 2. одно название id в одном html файле должно быть только один раз, другие названия можно использовать -->
+	<p id="testid"> Lorem ipsum dolor sit amet, consectetur <i>adipisicing elit</i>. Deserunt ea earum eligendi, ex,
+		fugiat fugit, maxime <b class="main_style">nihil obcaecati</b> odio quas quis quod <b>recusandae reiciendis</b>
+		similique tempora temporibus velit vitae voluptate. </p>
+	
+	<div>
+		<p> Lorem ipsum dolor sit amet, <b>consectetur adipisicing</b> elit. Dolor illo magnam molestias nihil pariatur
+			recusandae repudiandae rerum tenetur totam ut. Adipisci consequatur <i>cum laboriosam molestias</i> odit quod
+			soluta tempore vitae?</p>
+	</div>
 
-    <div>
-        <p> Lorem ipsum dolor sit amet, <b>consectetur adipisicing</b> elit. Dolor illo magnam molestias nihil pariatur
-            recusandae repudiandae rerum tenetur totam ut. Adipisci consequatur <i>cum laboriosam molestias</i> odit quod
-            soluta tempore vitae?</p>
-    </div>
+	<!-- 3. создали ссылку, чтобы подключить псевдо-класс -->
+	<a href="http://yandex.com" class="main_links" title="Переход в Яндекс" target="_blank">Ссылка</a>
+
+	<!-- 4. для теста сделаем текст и применим уже существующий класс -->
+	<p class="main_links"> Lorem ipsum dolor, sit, amet consectetur adipisicing elit.
+		Debitis dolorem facilis, mollitia eum laborum molestias vero, non accusantium voluptate repellat deserunt,
+		ullam! Sed incidunt tenetur impedit rem, exercitationem mollitia velit.</p>
+
+	<!-- 5. создаем поле для ввода, чтобы применить класс, изменяющий цвет текста -->
+	<input type="number" placeholder="Введите номер.." />
+	<input type="text" placeholder="Введите текст" />
+
 </body>
 
 </html>
