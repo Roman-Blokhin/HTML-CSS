@@ -76,3 +76,46 @@ p.text-cool:empty {
 p.text-cool:not(:empty) {
     background: grey;
 }
+
+/* 19. создаем псевдоэлемент ::after - он будет выводить текст после нашего текста, его нельзя выделить */
+#some_id {
+    content: '123';
+    color: red;
+    text-decoration: line-through;
+}
+/* 19.1 создаем псевдоэлемент ::before - он будет выводить текст перед нашим текстом, его нельзя выделить */
+#some_id::before {
+    content: '123';
+    color: red;
+    text-decoration: line-through;
+}
+
+/* 20. создаем псевдокласс и псевдоэлемент, которые будут применены только к обзацам, которые пустые,
+можно также вывести значение атрибута */
+
+p.text-cool:empty::after {
+    background: green;
+    content: attr(title); /* content: 'Some words'; */ 
+    color: white;
+}
+
+/* 21. обращаемся к первому символу с помощью псевдоэлемента ::first-letter {} */
+#color_id::first-letter {
+    color: red;
+}
+
+/* 22. обращаемся к первой линии с помощью псевдоэлемента ::first-line {} */
+#color_id::first-line {
+    color: green;
+}
+
+/* 23. обращаемся к первому упоминанию параграфа - p - с помощью псевдокласса :first-of-type {} */
+p:first-of-type {
+    text-decoration: underline;
+}
+
+/* 23. обращаемся к последнему упоминанию контейнера - div - с помощью псевдокласса :last-of-type {} */
+div:last-of-type {
+    color: white;
+    background: black;
+}
