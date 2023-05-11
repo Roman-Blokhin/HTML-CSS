@@ -1,0 +1,16 @@
+/* 1. работаем с задним фоном */
+
+#first {
+	background-color: #4682B4;
+	background: url('https://time-news.net/uploads/posts/2022-01/1643621550_1.jpg' ) no-repeat; /* 2.добавить картинку 1 способ */
+	/* background: url('C:/Users/Вкусвилл/PycharmProjects/HTML-CSS/www/img/123.jpeg'); /* 3.добавить картинку 2 способ */
+	/* 4. мы можем указать аргумент: repeat-x - он дублирует картинку по оси х, no-repit - не дублирует ее вообще */
+	background-position: center; /* 5. указываем, где картинка будет находится */
+	height: 600px; /* 6. высота расположения нашей картинки */
+	/* background-size: cover; /* 7. растягивает картинку на весь родительский тег, в данном случае body */
+	background-attachment: fixed; /* 8. делаем классны и стильный скорллинг по экрану колесиком */
+}
+
+#second {
+	height: 2000px;
+}
