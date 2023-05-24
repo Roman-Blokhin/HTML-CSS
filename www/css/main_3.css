@@ -35,3 +35,29 @@
     text-align: justify; /* растягивает текст, можно также использовать значение left, right, center */
     letter-spacing: 10px; /* расстояние между буквами */
 }
+
+
+.bord {
+    padding: 20px 5px 2px 5px; /* внутренние отступы, до рамки */
+    border: 2px solid grey; /* рамка */
+    margin: 40px 20px 10px 4px; /* внешние отступы, после рамки */
+    height: 100px; /* высота блока */
+}
+
+
+#border {
+    width: 20%; /* ширина, относительно страницы */
+    height: 200px;
+    border-style: dashed; /* виды рамок */
+}
+
+
+#border_2 {
+    padding: 30px 40px 20px 10px; /* не учитывается из-за border-box */
+    margin: 20px 20px 20px 20px; /* не учитывается из-за border-box */
+    width: 30%;
+    height: 150px;
+    border-style: dashed;
+    box-sizing: border-box; /* не обращает внимание на padding и mardin. ориентируется на width и height */
+
+}
