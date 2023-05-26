@@ -59,5 +59,16 @@
     height: 150px;
     border-style: dashed;
     box-sizing: border-box; /* не обращает внимание на padding и mardin. ориентируется на width и height */
+}
 
+.foto_bg { /* можно поставить картинку на задний фон блока */
+    background-image: url('https://krot.info/uploads/posts/2021-11/1636577685_15-krot-info-p-rassvet-v-lesu-krasivoe-foto-16.jpg');
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat; /* не повторять картинку */
+    background-position: 50px 50px; /* расположение картинки в блоке, начинаестся с (0,0) лев. верхн. угол*/
+    color: #000000;
+    background-size: contain; /* полностью вставляет в блок картинку, а contain сохраняет растягивает картинку */
+    border-style:double;
+    padding: 5px;
 }
