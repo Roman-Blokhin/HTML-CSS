@@ -7,3 +7,31 @@
 ._2 {
     list-style: lower-greek outside none; /* можно записать все тоже самое, но в одну строчку */
 }
+
+/* ------------------------ работа с ссылками, стилизация ------------------------------ */
+
+a:visited { /* обращается ко всем ссылкам, по которым уже перешли */
+    color: green;
+}
+
+a:link { /* определяет стиль обычных непосещенных ссылок */
+    text-decoration: none; /* удаляет стандартное подчеркивание */
+    color: black;
+    background: yellow;
+}
+
+a:active { /*стили при нажатии на ссылку */
+    color:blue;
+    background: red;
+    text-decoration: line-through;
+}
+
+a:hover{ /* стили при наведении на ссылку курсора */
+    background: green;
+    font-size: 20px;
+    color: white;
+}
+
+.li_23 {
+    display: inline-block; /* если у нас список из ссылок ,то данная функция располагает их в одну строчку, а не списком */
+}
