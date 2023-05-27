@@ -1,0 +1,9 @@
+._1 {
+    list-style-type: upper-roman; /* для маркера можно выбрать другой стиль */
+    list-style-position: inside; /* маркеры внутри или снаружи (outside) */
+    list-style-image: url(''); /* прикрепляет картинук вместо маркеров, в оригинальном размере */
+}
+
+._2 {
+    list-style: lower-greek outside none; /* можно записать все тоже самое, но в одну строчку */
+}
