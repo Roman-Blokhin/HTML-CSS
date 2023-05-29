@@ -70,3 +70,35 @@ tr:nth-child(odd) { /* обращаемся к нечетным строкам *
     font-weight: 700;
     background-color: grey;
 }
+
+/* ------------------------ стили для input ------------------------------ */
+
+input[type=text] { /* мы можем отредактировать конкретный input, выбрав его по type. важно, чтобы скобки были без пробелов */
+    color: blue;
+    font-size: 20px;
+}
+
+input[type=email] { /* стиль поля для ввода email */
+    color: red;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+input[type=submit] { /* стиль кнопки */
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: green;
+    font-weight: 700;
+    font-family: Comic sans MS;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 10%;
+}
+
+input[type=submit]:hover { /* стиль кнопки при наведении */
+    background-color: red;
+    font-size: 25px;
+    color: white;
+
+}
