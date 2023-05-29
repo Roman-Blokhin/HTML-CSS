@@ -1,0 +1,60 @@
+header, footer {
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+a:hover { /* стиль ссылки при наведении */
+    background-color: #d3d3d3;
+}
+
+#sec_left_1 {
+    padding-left: 100px;
+    padding-right: 150px;
+    flex: 1; /* устанавливаем размер секции относительно ширины экрана
+    и количества других секций в строке */
+    margin: 20px;
+    margin-top: 1-px;
+}
+
+#sec_centre_1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+    flex: 5;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#sec_right_1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    flex: 3;
+    margin: 10px 150px 50px 50px;
+    height: 200px;
+}
+
+.centre_text {
+    text-align: center;
+}
+
+main {
+    display: flex; /* расположение элементов в строках, добавляется к
+    родительскому элементу */
+    font-family: Comic Sans MS;
+}
+
+.all_border {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px
+}
+
+/* display: block - делает строчный элемент блочным */
+/* display: inline - делает строчный элемент строчным */
