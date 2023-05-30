@@ -1,6 +1,8 @@
 header, footer {
     text-align: center;
     font-family: Comic Sans MS;
+    z-index: 1; /* определяет, какой элемент должен быть по порядку
+    наслаивания, определяет поток расположения элемента */
 }
 
 a {
@@ -14,30 +16,33 @@ a:hover { /* стиль ссылки при наведении */
     background-color: #d3d3d3;
 }
 
-#sec_left_1 {
-    padding-left: 100px;
+.sec_left_1 {
+    padding-left: 150px;
     padding-right: 150px;
     flex: 1; /* устанавливаем размер секции относительно ширины экрана
     и количества других секций в строке */
     margin: 20px;
-    margin-top: 1-px;
+    margin-top: 20px;
+    position: fixed; /* фиксированное позиционирование. оставляет элемент на опр.
+    месте, он наслаивается на другие элементы при прокручивании страницы */
 }
 
-#sec_centre_1 {
+.sec_centre_1 {
     border: 1px solid black;
     border-radius: 10px;
     height: 200px;
     flex: 5;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 5px;
+    margin-left: 400px;
 }
 
-#sec_right_1 {
+.sec_right_1 {
     border: 1px solid black;
     border-radius: 10px;
     flex: 3;
-    margin: 10px 150px 50px 50px;
-    height: 200px;
+    margin: 20px 150px 50px 50px;
+    height: 210px;
 }
 
 .centre_text {
@@ -58,3 +63,63 @@ main {
 
 /* display: block - делает строчный элемент блочным */
 /* display: inline - делает строчный элемент строчным */
+
+/* ---------------------------------------- */
+
+.flex_2 {
+    display: flex; /* установил 2 линию блоков на странице */
+}
+
+
+.sec_centre_2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 500px;
+    flex: 3;
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: 400px;
+}
+
+
+.sec_right_2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    flex: 3;
+    margin: 10px 150px 50px 50px;
+    height: 100px;
+}
+
+#img_icon {
+    float: right; /* float позволяет разместить картинку в контейнере,
+    либо left, либо right */
+    padding-bottom: 20px;
+    padding-right: 20px
+}
+
+/* ------------------ создаем 3-ю линию контейнеров ---------------------- */
+
+.sec_absolut_position_1 {
+    flex: 1;
+    height: 100px;
+    position: absolute; /* контейнер вырывается из потока и
+    может быть где угодно */
+    bottom: 330px;
+    right: 190px;
+    text-align: center;
+}
+
+.sec_absolut_position_2 {
+    flex: 1;
+    height: 100px;
+    position: absolute;
+    bottom: 510px;
+    right: 685px;
+    z-index: 2; /* определяет, какой элемент должен быть по порядку
+    наслаивания, определяет поток расположения элемента */
+}
+
+/* position: relative - помогает переместить элемент
+ относительно его начального расположения, сохраняя место за этим элементом.
+ Свойства top, bottom, left, right показывают, как смещен элемент.
+ Он может перекрывать и другие элементы */
