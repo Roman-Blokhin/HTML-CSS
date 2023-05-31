@@ -1,0 +1,55 @@
+.povorot_1 {
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    margin-left: 200px;
+    margin-top: 100px;
+    transform: rotate(20deg) scale(0.7, 0.7); /* поворот по часовой стрелке */
+    /* scale(0.7, 0.7) уменьшает размер элемента, начальная стадия = 1. 
+    Можно прописывать сколько угодно transform через пробел */
+}
+
+.povorot_2 {
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    margin-left: 200px;
+    margin-top: 100px;
+    transform: rotate(-20deg); /* поворот против часовой стрелки */
+}
+
+.empty {
+    width: 100px;
+    height: 50px;
+    margin: 30px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.povorot_3 {
+    padding: 20px;
+    background-color: grey;
+    transform: rotate(20deg);
+    transform-origin: 20% 50%; /* изменяет позицию элемента, координата Х
+    от левого края, затем координата У. transform-origin используется только
+    с transform: rotate */
+    position: absolute;
+}
+
+.go {
+    width: 100px;
+    background-color: red;
+    transform: translate(150px, 50px) scale(1.5, 1.5); /* перемещает элемент по оси Х и У.
+    Подходит для анимации, допускает минусовые значения */
+    /* scale(1.5, 1.5) увеличивает размер элемента, начальная стадия = 1. 
+    Можно прописывать сколько угодно transform через пробел */
+}
+
+.go_2 {
+    width: 100px;
+    margin-left: 400px;
+    background-color: black;
+    transform: skew(40deg); /* наклоняет элемент, а если прописано второе
+    значение, то значение получается 0, наклона не будет */
+    color: white;
+}
