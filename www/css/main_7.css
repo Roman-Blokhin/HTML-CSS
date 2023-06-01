@@ -1,0 +1,53 @@
+.tran_1 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transition: 3s; /* отвечает за изменение элемента, устанавливаем время */
+    position: relative;
+    left: 0px;
+}
+
+div:hover { /* прописываем все изменения, которые произойдуд при наведении курсора */
+    background-color: black;
+    width: 100px;
+    left: 100px;
+}
+
+.tran_2 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    transition: background-color 3s;
+    transition-timing-function: ease-in; /* изменяет эффект движения */
+    border: 1px solid black;
+}
+
+p:hover {
+    background-color: grey;
+    border: 10px dotted red;
+}
+
+.tran_3 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    transition: transform 5s ease-out; /* указываем все параметры вместе,
+    заместо transition-timing-function */
+    border: 1px solid black;
+}
+
+section:hover {
+    background-color: yellow;
+    width: 150px;
+    transform: rotate(130deg); /* поворачиваем элемент на 130 градусов */
+}
+
+/* transition:
+ease - анимация начинается медленно, затем быстро ускоряется
+ease-in - начинается медленно, затем ускоряется
+ease-out - начинается быстро, но замедляется в конце
+ease-in-out - аналогично ease, но с более плавным ускорением и замедлением
+linear - постоянная скорость на протяжении всей анимации,
+больше подходит для изменения цвета или непрозрачности */
